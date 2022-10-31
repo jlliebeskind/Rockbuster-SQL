@@ -1,5 +1,5 @@
-SQL CTE Query 
-Used to find the five most loyal customers from the ten countries with the greatest number of customers in the Rockbuster database
+SQL CTE Query with Multiple Joins
+Multi-step query to find the five most loyal customers from the top-ten cities in the top ten-countries in the Rockbuster database
 
 WITH top_five_customers_cte (customer_id, first_name, last_name, country, total_amount_paid) AS
 (SELECT A.customer_id, A.first_name, A.last_name, D.country, SUM(E.amount) AS total_amount_paid
